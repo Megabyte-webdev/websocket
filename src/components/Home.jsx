@@ -29,7 +29,7 @@ const renderUsersList = users => {
 };
 
 const Home = ({ username }) => {
-  const WS_URL = "https://websocket-server-nw6k.onrender.com/" || 'ws://localhost:8000';
+  const WS_URL = "https://websocket-server-nw6k.onrender.com"  //|| 'ws://localhost:8000';
   const { sendJsonMessage, lastJsonMessage } = useWebSocket(WS_URL, {
     queryParams: { username }
   });
